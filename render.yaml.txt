@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: voice-expense-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python voice_expense_bot.py"
