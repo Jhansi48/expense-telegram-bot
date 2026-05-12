@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: expense-telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python voice_expense_bot.py
